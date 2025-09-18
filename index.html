@@ -8,11 +8,11 @@
 
     <body>
 <a-scene>
+
+    <a-camera><a-cursor></a-cursor></a-camera>
   <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
 
   <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
-</a-scene>
-<a-scene>
   <a-assets>
     <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
   </a-assets>
@@ -20,8 +20,7 @@
   <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
 
   <a-sky color="#222"></a-sky>
-</a-scene>
-<a-scene>
+
   <a-assets>
     <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
     <img id="skyTexture"
@@ -31,7 +30,7 @@
   <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
 
   <a-sky src="#skyTexture"></a-sky>
-</a-scene>
+
 <a-plane rotation="-90 0 0" width="100" height="1000"></a-plane>
 <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
   repeat="10 10"></a-plane>
@@ -50,7 +49,7 @@
 
   <a-light type="ambient" color="#ffffff"></a-light>
   <a-light type="point" intensity="2" position="0 2 -5></a-light>
-</a-scene>
+
        <a-box
             position="0 1 -5"
             depth="2"
